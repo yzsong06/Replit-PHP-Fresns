@@ -1,7 +1,6 @@
 echo Replit_Fresns 安装脚本
 echo Install Fresns To Replit
 echo By The 一只鬆（Yzsong06）
-bash <(curl -s https://raw.githubusercontent.com/yzsong06/Replit-PHP-Fresns/main/replit.sh)
 nix-env -iA nixpkgs.wget
 wget https://app.fresns.org/latest.zip
 nix-env -iA nixpkgs.unzip
