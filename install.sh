@@ -6,7 +6,7 @@ nix-env -iA nixpkgs.wget
 wget https://app.fresns.org/latest.zip
 nix-env -iA nixpkgs.unzip
 unzip -d ./fresns latest.zip
-mv ./fresns-$tag.zip fresns
+mv ./fresns-$tag ./fresns
 rm -rf latest.zip
 echo "恭喜搭建完成"
 echo "The setup is complete"
