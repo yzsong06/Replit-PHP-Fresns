@@ -5,7 +5,7 @@ tag=$(curl -s "https://api.github.com/repos/$repo/releases/latest" | grep -o '"t
 nix-env -iA nixpkgs.wget
 wget https://app.fresns.org/latest.zip
 nix-env -iA nixpkgs.unzip
-unzip -d ./fresns latest.zip
+unzip latest.zip
 mv ./fresns-$tag ./fresns
 rm -rf latest.zip
 echo "恭喜搭建完成"
